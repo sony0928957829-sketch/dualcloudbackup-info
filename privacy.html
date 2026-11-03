@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隱私權政策</title><meta name="description" content="DualCloudBackup 個人雙雲備份工具的用途、隱私權政策及使用條款。"><link rel="stylesheet" href="style.css"></head><body><header><nav aria-label="主要導覽"><a href="index.html">DualCloudBackup</a><a href="privacy.html">隱私權政策</a><a href="terms.html">使用條款</a></nav></header><main><h1>DualCloudBackup 隱私權政策</h1>
+<p>最後更新日期：2026-11-03</p>
+<h2>適用範圍</h2>
+<p>本政策說明 DualCloudBackup 個人備份工具如何處理本人授權的 Microsoft OneDrive 與 Google Drive 資料。本工具由帳號持有人自行管理，供本人使用，目前不提供他人註冊或使用。</p>
+<h2>存取及處理的資料</h2>
+<p>為執行備份與驗證，工具會處理指定範圍內的檔案內容，以及檔名、資料夾路徑、檔案識別碼、大小、修改時間與可取得的校驗資訊。工具也會保存 OAuth 授權設定及存取／更新權杖，以便在授權有效期間連線。</p>
+<p>OneDrive 來源目前使用讀取權限；Google Drive 使用 <code>drive.file</code> 權限，處理本工具建立或使用者明確授權給本工具的檔案。工具不以這項權限取得所有既有 Google Drive 檔案的存取權。</p>
+<h2>資料用途</h2>
+<p>資料僅用於本人指定的檔案備份、版本保留、還原、完整性驗證與故障排查。不用於廣告、出售、使用者輪廓分析，亦不將備份內容提供給 AI 模型訓練。</p>
+<h2>資料流向與儲存位置</h2>
+<p>備份檔案由 OneDrive 經執行工具的電腦傳送至本人的 Google Drive。Microsoft 與 Google 會依各自的服務條款及隱私權政策處理其平台上的資料。</p>
+<p>OAuth 設定與權杖保存在本機的受存取權限限制之設定目錄，不應置於公開網站、公開程式碼庫或公開分享連結。本機也可能保留執行紀錄、檔案清單、驗證結果，以及還原或排查所需的暫存資料；這些資料可能包含檔名與路徑。</p>
+<p>除使用者選擇的 Microsoft 與 Google 雲端服務外，目前工具沒有另設接收備份內容的代管服務。公開的工具介紹頁、隱私權政策與使用條款不應包含備份內容或授權憑證。</p>
+<h2>保存、刪除與撤銷授權</h2>
+<p>目的端副本及歷史版本會持續占用 Google Drive 空間。預定的備份方式不因 OneDrive 來源刪除而自動刪除 Google Drive 副本，因此來源刪除不代表備份也已刪除。正式的版本保留期限尚待本人設定。</p>
+<p>本人可以停止工具執行、在 Microsoft 或 Google 帳號的授權管理介面撤銷授權，並自行刪除目的端備份、本機紀錄及授權設定。撤銷授權本身不會自動刪除已存在的備份；雲端刪除後的垃圾桶與平台保留機制仍依各平台規則處理。</p>
+<h2>Google API 資料使用</h2>
+<p>DualCloudBackup 對透過 Google API 取得之資訊的使用與傳輸，將遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括其中的 Limited Use 要求。</p>
+<h2>聯絡與變更</h2>
+<p>如需處理資料、授權或政策問題，請聯絡應用程式管理者：<a href="mailto:sony0928957829@gmail.com">sony0928957829@gmail.com</a>。</p>
+<p>若工具用途、權限或資料處理方式改變，應先更新本政策，並在必要時重新取得授權。</p></main><footer>DualCloudBackup · 個人使用 · 最後更新：2026-11-03</footer></body></html>

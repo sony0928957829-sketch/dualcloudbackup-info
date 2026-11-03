@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DualCloudBackup</title><meta name="description" content="DualCloudBackup 個人雙雲備份工具的用途、隱私權政策及使用條款。"><link rel="stylesheet" href="style.css"></head><body><header><nav aria-label="主要導覽"><a href="index.html">DualCloudBackup</a><a href="privacy.html">隱私權政策</a><a href="terms.html">使用條款</a></nav></header><main><h1>DualCloudBackup</h1>
+<p>DualCloudBackup 是帳號持有人自行設定、供本人使用的雙雲備份工具，以 rclone 在本人的電腦上執行，透過 Microsoft OneDrive 與 Google Drive 官方 API，將本人指定的 OneDrive 雲端檔案另存至本人的 Google Drive。</p>
+<p>這個工具的目的，是減少兩套電腦版同步程式同時處理同一批 OneDrive 檔案所造成的本機空間占用。傳輸資料仍會經過執行工具的電腦與網路；它不是由 Microsoft 與 Google 直接進行的伺服器間搬移，也不能保證完全不使用本機暫存空間。</p>
+<h2>存取權限</h2>
+<ul>
+<li>OneDrive：讀取來源檔案與資料夾，用於列出、下載及備份；目前設定不要求寫入來源的權限。</li>
+<li>Google Drive：使用 <code>drive.file</code> 權限，存取由本工具建立，或由使用者明確授權給本工具的檔案。這項權限不等同於存取整個既有 Google Drive。</li>
+</ul>
+<h2>備份方式與目前狀態</h2>
+<p>預定方式是單向複製：來源檔案更新時保留舊版本，來源檔案刪除時保留目的端副本。正式備份的資料範圍、頻率及版本保留期限，須由本人確認後才啟用。</p>
+<p>目前僅完成小批測試，尚未啟用正式資料備份與自動排程。本工具不代表已備份整部電腦；OneDrive 以外的本機資料須另行納入規劃。</p>
+<h2>聯絡</h2>
+<p>應用程式管理者聯絡信箱：<a href="mailto:sony0928957829@gmail.com">sony0928957829@gmail.com</a></p></main><footer>DualCloudBackup · 個人使用 · 最後更新：2026-11-03</footer></body></html>
